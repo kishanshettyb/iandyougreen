@@ -1,0 +1,76 @@
+.banner {
+	background: rgb(240, 253, 244);
+	background: linear-gradient(180deg, rgba(240, 253, 244, 1) 26%, rgba(220, 252, 231, 1) 61%);
+	position: relative;
+	padding-top: 200px !important;
+	padding-top: 200px !important;
+	.container {
+		position: relative;
+		z-index: 1;
+	}
+	.wave {
+		background-image: url("../images/shapes/wave-1.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom;
+		width: 100%;
+		height: 500px;
+		position: absolute;
+		bottom: 0;
+		z-index: 0;
+	}
+}
+
+.banner-img {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+	&.b-t-r-radius-0 {
+		border-top-right-radius: 0 !important;
+	}
+	&.b-b-l-radius-0 {
+		border-bottom-left-radius: 0 !important;
+	}
+}
+
+.banner-donation-card {
+	p {
+		width: 90%;
+		@media (min-width: 1200px) {
+			width: 70%;
+		}
+	}
+}
+
+.price {
+	width: auto;
+	padding: 8px 30px;
+	border-radius: 20px;
+	background-color: #83cc1648;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 0;
+	cursor: pointer;
+	&.active,
+	&:hover {
+		background-color: $primary;
+	}
+}
+
+.custom-price-input {
+	width: 180px;
+	input {
+		border-radius: 20px;
+		padding-left: 25px !important;
+	}
+	label {
+		padding-left: 25px !important;
+	}
+}
+
+.hero {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}

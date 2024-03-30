@@ -1,0 +1,31 @@
+.logo {
+	width: 20rem;
+	height: auto;
+}
+.nav-link {
+	padding: 0 1.7rem !important;
+	color: #1a2e05;
+	font-size: 1rem;
+	opacity: 0.6;
+	&.active,
+	&:target,
+	&:hover,
+	&:visited {
+		opacity: 1;
+	}
+}
+
+.navbar-bg {
+	background-color: transparent !important;
+	&.trans {
+		transition: all 1s ease-out !important;
+	}
+	&.fixed-bg {
+		background-color: $white !important;
+		.logo {
+			width: 15rem;
+			height: auto;
+			transition: all 1s ease-out;
+		}
+	}
+}
